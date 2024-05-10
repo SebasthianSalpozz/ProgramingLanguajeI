@@ -1,0 +1,67 @@
+cabal-version: 2.2
+
+-- This file has been generated from package.yaml by hpack version 0.36.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           programming-languages-labs
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/SebasthianSalpozz/programming-languages-labs#readme>
+homepage:       https://github.com/SebasthianSalpozz/programming-languages-labs#readme
+bug-reports:    https://github.com/SebasthianSalpozz/programming-languages-labs/issues
+author:          Sebasthian Salinas Pozzo
+maintainer:     sebasthiansalinaspozzo@gmail.com
+copyright:      MIT License
+license:        BSD-3-Clause
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    CHANGELOG.md
+
+source-repository head
+  type: git
+  location: https://github.com/SebasthianSalpozz/programming-languages-labs
+
+library
+  exposed-modules:
+      Lib
+  other-modules:
+      Paths_programming_languages_labs
+  autogen-modules:
+      Paths_programming_languages_labs
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010
+
+executable programming-languages-labs-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_programming_languages_labs
+  autogen-modules:
+      Paths_programming_languages_labs
+  hs-source-dirs:
+      app
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , programming-languages-labs
+  default-language: Haskell2010
+
+test-suite programming-languages-labs-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_programming_languages_labs
+  autogen-modules:
+      Paths_programming_languages_labs
+  hs-source-dirs:
+      test
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , programming-languages-labs
+  default-language: Haskell2010
